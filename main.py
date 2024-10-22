@@ -1,4 +1,5 @@
 import justpy as jp
+import os
 from charts import avg_day_rating, avg_week_rating, avg_month_rating, num_ratings_month, num_ratings
 
 
@@ -15,5 +16,5 @@ def app():
     return wp
 
 
-jp.justpy(app)
-jp.justpy(app, host='0.0.0.0')
+port = int(os.environ.get("PORT", 8000))
+jp.justpy(app, host='0.0.0.0', port=port)
