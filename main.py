@@ -16,4 +16,4 @@ def app():
 
 
 jp.justpy(app)
-jp.justpy(app, host='0.0.0.0', port=8000)
+jp.justpy(app, host='0.0.0.0')
